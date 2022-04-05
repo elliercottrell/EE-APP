@@ -1,21 +1,27 @@
+:root {
+  --primary-color: #f4cdcd;
+  --secondary-color: #5a6760;
+  --highlight-color: #ffffff;
+  --primary-font: "PT mono";
+}
 body {
   height: 100vh;
   background: linear-gradient(
     to top,
-    #f4cdcd 0%,
-    #f4cdcd 50%,
-    #5a6760 50%,
-    #5a6760 100%
+    var(--primary-color) 0%,
+    var(--primary-color) 50%,
+    var(--secondary-color) 50%,
+    var(--secondary-color) 100%
   );
 }
 .success {
   height: 100vh;
   background: linear-gradient(
     to bottom,
-    #f4cdcd 0%,
-    #f4cdcd 50%,
-    #5a6760 50%,
-    #5a6760 100%
+    var(--primary-color) 0%,
+    var(--primary-color) 50%,
+    var(--secondary-color) 50%,
+    var(--secondary-color) 100%
   );
 }
 .theLogoEntry img {
@@ -34,9 +40,9 @@ body {
 .logIn,
 .signUp {
   background: none;
-  border: solid #5a6760 5px;
-  color: #5a6760;
-  font-family: "PT mono";
+  border: solid var(--secondary-color) 5px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 43px;
@@ -56,17 +62,17 @@ body {
 
 .logIn a,
 .signUp a {
-  color: #5a6760;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #f4cdcd;
+  color: var(--primary-color);
 }
 
 .logIn:hover,
 .signUp:hover {
-  background-color: #5a6760;
+  background-color: var(--secondary-color);
 }
 
 .logInPageForms {
@@ -77,9 +83,9 @@ a:hover {
 #password {
   display: block;
   background: none;
-  border: solid #5a6760 5px;
-  color: #5a6760;
-  font-family: "PT mono";
+  border: solid var(--secondary-color) 5px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 17px;
@@ -94,19 +100,19 @@ a:hover {
 }
 #username:hover,
 #password:hover {
-  border: solid white 5px;
-  color: white;
+  border: solid var(--highlight-color) 5px;
+  color: var(--highlight-color);
 }
 
 #username:valid,
 #password:valid {
-  color: white;
+  color: var(--highlight-color);
 }
 .btn {
-  background: #5a6760;
-  border: solid #5a6760 5px;
-  color: #f4cdcd;
-  font-family: "PT mono";
+  background: var(--secondary-color);
+  border: solid var(--secondary-color) 5px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 43px;
@@ -115,14 +121,14 @@ a:hover {
 }
 
 .btn:hover {
-  color: white;
-  background: #f4cdcd;
+  color: var(--highlight-color);
+  background: var(--primary-color);
 }
 .btnLogIn {
-  background: #5a6760;
-  border: solid #5a6760 5px;
-  color: #f4cdcd;
-  font-family: "PT mono";
+  background: var(--secondary-color);
+  border: solid var(--secondary-color) 5px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 43px;
@@ -131,17 +137,17 @@ a:hover {
 }
 
 .btnLogIn:hover {
-  color: white;
-  background: #f4cdcd;
+  color: var(--highlight-color);
+  background: var(--primary-color);
 }
 .signup {
   height: 100vh;
   background: linear-gradient(
     to top,
-    #f4cdcd 0%,
-    #f4cdcd 78%,
-    #5a6760 78%,
-    #5a6760 100%
+    var(--primary-color) 0%,
+    var(--primary-color) 78%,
+    var(--secondary-color) 78%,
+    var(--secondary-color) 100%
   );
 }
 .signUpLogo img {
@@ -164,9 +170,9 @@ a:hover {
 #firstname,
 #lastname {
   background: none;
-  border: solid #5a6760 5px;
-  color: #5a6760;
-  font-family: "PT mono";
+  border: solid var(--secondary-color) 5px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
@@ -179,9 +185,9 @@ a:hover {
 #createPassword,
 #confirmPassword {
   background: none;
-  border: solid #5a6760 5px;
-  color: #5a6760;
-  font-family: "PT mono";
+  border: solid var(--secondary-color) 5px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 23px;
@@ -197,7 +203,7 @@ a:hover {
 #createUsername:hover,
 #createPassword:hover,
 #confirmPassword:hover {
-  color: white;
+  color: var(--highlight-color);
 }
 
 #firstname:valid,
@@ -206,7 +212,7 @@ a:hover {
 #createUsername:valid,
 #createPassword:valid,
 #confirmPassword:valid {
-  color: white;
+  color: var(--highlight-color);
 }
 .form-check {
   margin: 5px 30px;
@@ -215,18 +221,18 @@ a:hover {
 }
 
 .form-check-input {
-  color: #5a6760;
-  border: solid 3px #5a6760;
+  color: var(--secondary-color);
+  border: solid 3px var(--secondary-color);
   border-radius: 0px;
 }
 .form-check:hover {
-  color: white;
+  color: var(--highlight-color);
 }
 .btn1 {
-  background: #5a6760;
-  border: solid #5a6760 5px;
-  color: #f4cdcd;
-  font-family: "PT mono";
+  background: var(--secondary-color);
+  border: solid var(--secondary-color) 5px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 43px;
@@ -236,8 +242,8 @@ a:hover {
 }
 
 .btn1:hover {
-  color: white;
-  background: #f4cdcd;
+  color: var(--highlight-color);
+  background: var(--primary-color);
 }
 
 .successText {
@@ -245,8 +251,8 @@ a:hover {
 }
 
 .youAreIn {
-  color: #f4cdcd;
-  font-family: "PT mono";
+  color: var(--primary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 120px;
@@ -256,9 +262,9 @@ a:hover {
 
 a.backMessage {
   background: none;
-  border: solid #f4cdcd 3px;
-  color: #f4cdcd;
-  font-family: "PT mono";
+  border: solid var(--primary-color) 3px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
