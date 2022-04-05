@@ -1,0 +1,270 @@
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #f4cdcd 0%,
+    #f4cdcd 50%,
+    #5a6760 50%,
+    #5a6760 100%
+  );
+}
+.success {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #f4cdcd 0%,
+    #f4cdcd 50%,
+    #5a6760 50%,
+    #5a6760 100%
+  );
+}
+.theLogoEntry img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 290.5px;
+}
+
+.theLogo img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+.logIn,
+.signUp {
+  background: none;
+  border: solid #5a6760 5px;
+  color: #5a6760;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 43px;
+  text-align: center;
+  padding: 18px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.logIn {
+  margin-top: 210px;
+}
+
+.signUp {
+  margin-top: -5px;
+}
+
+.logIn a,
+.signUp a {
+  color: #5a6760;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f4cdcd;
+}
+
+.logIn:hover,
+.signUp:hover {
+  background-color: #5a6760;
+}
+
+.logInPageForms {
+  margin-top: 200px;
+}
+
+#username,
+#password {
+  display: block;
+  background: none;
+  border: solid #5a6760 5px;
+  color: #5a6760;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 70px;
+  margin-left: 70px;
+  padding: 32.8px 0px 32.8px 11.3px;
+  margin-top: -5px;
+}
+
+:focus {
+  outline: none;
+}
+#username:hover,
+#password:hover {
+  border: solid white 5px;
+  color: white;
+}
+
+#username:valid,
+#password:valid {
+  color: white;
+}
+.btn {
+  background: #5a6760;
+  border: solid #5a6760 5px;
+  color: #f4cdcd;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 43px;
+  padding: 18px 32.8px;
+  margin: -5px 70px;
+}
+
+.btn:hover {
+  color: white;
+  background: #f4cdcd;
+}
+.btnLogIn {
+  background: #5a6760;
+  border: solid #5a6760 5px;
+  color: #f4cdcd;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 43px;
+  padding: 18px 32.85px;
+  margin: -5px 70px;
+}
+
+.btnLogIn:hover {
+  color: white;
+  background: #f4cdcd;
+}
+.signup {
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #f4cdcd 0%,
+    #f4cdcd 78%,
+    #5a6760 78%,
+    #5a6760 100%
+  );
+}
+.signUpLogo img {
+  width: 33%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+#firstname {
+  margin-top: 100px;
+  margin-left: 22px;
+  padding: 25px 0px;
+}
+#lastname {
+  margin-right: 15px;
+  margin-left: -9px;
+  padding: 25px 0px;
+}
+#firstname,
+#lastname {
+  background: none;
+  border: solid #5a6760 5px;
+  color: #5a6760;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  text-indent: 22px;
+  text-align: left;
+}
+
+#email,
+#createUsername,
+#createPassword,
+#confirmPassword {
+  background: none;
+  border: solid #5a6760 5px;
+  color: #5a6760;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 23px;
+  text-align: left;
+  padding: 18px 22.7px;
+  margin-top: -5px;
+  margin-left: 22px;
+}
+
+#firstname:hover,
+#lastname:hover,
+#email:hover,
+#createUsername:hover,
+#createPassword:hover,
+#confirmPassword:hover {
+  color: white;
+}
+
+#firstname:valid,
+#lastname:valid,
+#email:valid,
+#createUsername:valid,
+#createPassword:valid,
+#confirmPassword:valid {
+  color: white;
+}
+.form-check {
+  margin: 5px 30px;
+  font-family: "Futura Pt";
+  padding: 20px 15px;
+}
+
+.form-check-input {
+  color: #5a6760;
+  border: solid 3px #5a6760;
+  border-radius: 0px;
+}
+.form-check:hover {
+  color: white;
+}
+.btn1 {
+  background: #5a6760;
+  border: solid #5a6760 5px;
+  color: #f4cdcd;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 43px;
+  padding: 6px 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn1:hover {
+  color: white;
+  background: #f4cdcd;
+}
+
+.successText {
+  margin-top: 160px;
+}
+
+.youAreIn {
+  color: #f4cdcd;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 120px;
+  text-align: center;
+  line-height: 100px;
+}
+
+a.backMessage {
+  background: none;
+  border: solid #f4cdcd 3px;
+  color: #f4cdcd;
+  font-family: "PT mono";
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  padding: 2px;
+  margin: -5px 155px;
+}
